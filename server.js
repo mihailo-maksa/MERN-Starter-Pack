@@ -9,7 +9,7 @@ const connectDB = require("./config/connectDB");
 const app = express();
 
 // Connect Database
-connectDB();
+// connectDB();
 
 // Init Middleware
 app.use(express.json({ extended: false }));
@@ -19,7 +19,7 @@ app.use(cors({ origin: true }));
 app.use("/api/sample", require("./routes/sample"));
 
 // Serve Static Assets in Production
-if (process.env.NODE_ENV) {
+if (process.env.NODE_ENV === "production") {
   app.use(compression());
   app.use(enforce.HTTPS({ trustProtoHeader: true }));
 

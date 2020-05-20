@@ -2,20 +2,14 @@
 
 ## Quick Start 🚀
 
-INSTRUCTIONS... (include npm install on both client and server side in a single script && config.json and production.json files setup)
+INSTRUCTIONS...
 
-## Deployment (Heroku & Namecheap)
+1.) npm run setup
+2.) include your own MONGO_URI inside .env file
+3.) run npm run dev to start both the server and the client
+4.) as this project includes the heroku-postbuild script, just follow the regular deployment procedure and include your MONGO_URI as your environment variable (also do the same for any api keys, secret keys, etc. that your project may use)
 
-SSL certificate
-HTTP(S) redirection
-subdomains
-custom domain setup
-file uploading & processing with AWS S3 (images, audio, video, pdf's, text files)
-sending emails with with AWS SES
-pricing calculations for the cloud infrastructure as you scale
-
-Deploy This Demo Project to Heroku!
-open source this project & publish it on the NPM: MERN starter pack (upload it as an NPM package mern-starter-pack)
+Include LICENSE file
 
 ## Project Info
 

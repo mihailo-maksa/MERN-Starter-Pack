@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
-const config = require("config");
-const connectionString = config.get("mongoURI");
+
+if (process.env.NODE_ENV !== "production") require("dotenv").config();
+const connectionString = process.env.MONGO_URI;
+// this project is setup to use MONGO_URI from the local .env file only in the development mode
+// in the production mode, you MUST include it as an environment variable
 
 module.exports = async function () {
   try {

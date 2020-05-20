@@ -10,7 +10,7 @@
 6.) Run `git add -A` to add all project files to the git repository
 7.) Run `git commit -m "Ready for deployment"` to commit files to the repository
 8.) Run `heroku git:remote -a app-name` to set up remote connection
-9.) Add all environment variables necessary to run the app to Heroku (e.g. API keys, secret keys, etc.), e.g. `heroku config:set API_KEY=myapikey`
+9.) Add all environment variables necessary to run the app to Heroku (e.g. Mongo URI, API keys, secret keys, etc.), e.g. `heroku config:set API_KEY=myapikey`
 10.) Finally, run `git push heroku master` to deploy the app
 11.) If that doesn't succeed, you can try the forced deployment by running the `git push heroku master --force` (NOTE: this is a bad practice, and thus not recommended)
 
@@ -21,14 +21,12 @@
 3.) `git push heroku master`
 4.) Again, if that doesn't succeed, you can try the forced deployment by running the `git push heroku master --force` (NOTE: this is a bad practice, and thus not recommended)
 
-## Adding Your Custom Domain Name
+SSL certificate
+subdomains
+custom domain setup
 
-## Adding The SSL Certificate
+Deploy This Demo Project to Heroku!
+
+open source this project & publish it on the NPM: MERN starter pack (upload it as an NPM package mern-starter-pack)
 
 **NOTE:** In this exmaple, we'll be using Namecheap, but your free to use any domain registrar you prefer.
-
-## Advanced: AWS S3 Setup (For File Uploading)
-
-## Advanced: AWS SES Setup (For Sending Emails)
-
-## Pricing Notes & Considerations
