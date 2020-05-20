@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //Components
 import Spinner from "./components/layout/Spinner";
 import ErrorBoundary from "./components/errors/ErrorBoundary";
-import Home from "./components/layout/Home";
+import HomePage from "./components/layout/HomePage";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import NotFound from "./components/errors/NotFound";
@@ -26,7 +26,7 @@ const App = () => {
           <Suspense fallback={<Spinner />}>
             <Header />
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={HomePage} />
               <Route component={NotFound} />
             </Switch>
             <Footer />

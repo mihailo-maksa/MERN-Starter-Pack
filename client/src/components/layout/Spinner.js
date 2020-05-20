@@ -1,18 +1,10 @@
 import React from "react";
-// import spinner.gif locally
+import * as spinner from "../../assets/spinner.gif";
 
-const Spinner = () => (
-  <div>
-    <img
-      src="https://raw.githubusercontent.com/bradtraversy/devconnector_2.0/master/client/src/components/layout/spinner.gif"
-      alt="Loading..."
-      style={{
-        width: "200px",
-        margin: "auto",
-        display: "block"
-      }}
-    />
-  </div>
-);
-
-export default Spinner;
+export default function Spinner() {
+  return (
+    <div className="container">
+      <img src={spinner} alt="Loading..." className="spinner" />
+    </div>
+  );
+}

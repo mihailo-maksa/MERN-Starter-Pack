@@ -1,3 +1,2 @@
-// Sample Action Types
-export const GET_NAME = "GET_NAME";
-export const ERROR = "ERROR";
+// Sample Action Type
+export const SAMPLE_ACTION = "SAMPLE_ACTION";

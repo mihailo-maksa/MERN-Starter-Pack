@@ -1,22 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+export default function Header() {
   return (
-    <div>
-      <Link to="/" className="brand-logo">
-        <span className="logo">Home</span>
+    <div className="header">
+      <Link to="/" className="home-link">
+        Home
       </Link>
-      <ul className="right hide-on-med-and-down">
-        <li>
-          <Link to="/register">Register</Link>
-        </li>
-        <li>
-          <Link to="/login">Login</Link>
-        </li>
-      </ul>
+      <a
+        href="https://github.com/mihailo-maksa/MERN-Starter-Pack"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="github-link"
+      >
+        Github Repo
+      </a>
     </div>
   );
-};
-
-export default Header;
+}

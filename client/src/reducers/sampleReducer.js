@@ -1,21 +1,11 @@
-import { GET_NAME, ERROR } from "../actions/types";
+import { SAMPLE_ACTION } from "../actions/types";
 
-const initialState = {
-  name: "",
-  error: null
-};
+const initialState = {};
 
-export default function (state = initialState, action) {
+// Sample Reducer
+export default function sampleReducer(state = initialState, action) {
   switch (action.type) {
-    case GET_NAME:
-      return {
-        ...state,
-        name: action.payload
-      };
-    case ERROR:
-      return {
-        error: action.payload
-      };
+    case SAMPLE_ACTION:
     default:
       return state;
   }
