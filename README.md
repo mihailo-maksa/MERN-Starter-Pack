@@ -1,15 +1,65 @@
-# MERN Stack: Full Starter Pack
+# MERN Stack: The Full Starter Pack
 
 ## Quick Start 🚀
 
-INSTRUCTIONS...
+#### Add a .env file in the root folder with the following
 
-1.) npm run setup
-2.) include your own MONGO_URI inside .env file
-3.) run npm run dev to start both the server and the client
-4.) as this project includes the heroku-postbuild script, just follow the regular deployment procedure and include your MONGO_URI as your environment variable (also do the same for any api keys, secret keys, etc. that your project may use)
+`MONGO_URI=your_mongoDB_Atlas_URI_with_credentials`
 
-Include LICENSE file
+#### Install Server & Client Side Dependencies
+
+`npm run setup`
+
+#### Run Both Server & Client From Root
+
+`npm run dev`
+
+#### Build For Production
+
+`cd client`
+`npm run build`
+
+#### Test Production Before Deploying
+
+After running `npm run build` in the client, cd back to the root of the project and run:
+`NODE_ENV=production node server.js`
+Check in browser at [http://localhost:5000](http://localhost:5000)
+
+#### Deploy to Heroku
+
+Log in into your Heroku account from the CLI
+`heroku login`
+
+Create your Heroku app
+`heroku create app-name`
+
+Set your MONGO_URI as an environment variable for Heroku (and other environment variables, such as API keys, secret keys, etc. if you have them)
+`heroku config:set MONGO_URI=your_mongoDB_Atlas_URI_with_credentials`
+**NOTE:** For larger projects (especially for commercial projects), it's recommended to use different databases for development & production modes
+
+Add all files
+`git add -A`
+
+Commit
+`git commit -m "ready to deploy"`
+
+And finally, deploy the app
+`git push heroku master`
+
+If that doesn't succeed, you can try the forced deployment by running the `git push heroku master --force` (**NOTE:** this is a bad practice, and thus not recommended - try to avoid it)
+
+##### Future Redeployments to Heroku
+
+Add all files
+`git add -A`
+
+Commit
+`git commit -m "ready to redeploy"`
+
+Redeploy the app
+`git push heroku master`
+
+INCLUDE THE MIT LICENSE FILE
 
 ## Project Info
 
@@ -24,3 +74,4 @@ Mihailo Maksa
 ### License
 
 This project is licensed under the MIT License
+
