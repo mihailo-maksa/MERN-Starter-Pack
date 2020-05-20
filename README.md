@@ -6,9 +6,16 @@
 
 `MONGO_URI=your_mongoDB_Atlas_URI_with_credentials`
 
-### Install Server & Client Side Dependencies
+### Install Server Dependencies
 
-`npm run setup`
+`npm install`
+
+### Install Client Dependencies
+
+```
+cd client
+npm install
+```
 
 ### Run Both Server & Client From Root
 
