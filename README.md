@@ -39,21 +39,21 @@ npm run build
 
 `heroku create app-name`
 
-3. Set your MONGO_URI as an environment variable for Heroku
-
-`heroku config:set MONGO_URI=your_mongoDB_Atlas_URI_with_credentials`
-
-4. Add All Files
+3. Add All Files
 
 `git add -A`
 
-5. Commit
+4. Commit
 
 `git commit -m "ready to deploy"`
 
-6. Add Remote
+5. Add Remote
 
 `heroku git:remote -a app-name`
+
+6. Set your MONGO_URI as an environment variable for Heroku
+
+`heroku config:set MONGO_URI=your_mongoDB_Atlas_URI_with_credentials`
 
 7. And Finally, Deploy the App
 
@@ -72,6 +72,8 @@ npm run build
 - Redeploy the App
 
 `git push heroku master`
+
+---------------
 
 ## Project Info
 
