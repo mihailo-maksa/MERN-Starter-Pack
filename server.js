@@ -13,12 +13,10 @@ connectDB();
 
 // Init Middleware
 app.use(express.json({ extended: false }));
-app.use(cors());
+app.use(cors({ origin: true }));
 
 // Define Routes
-app.use("/api/users", require("./routes/users"));
-app.use("/api/auth", require("./routes/auth"));
-app.use("/api/custom", require("./routes/custom"));
+app.use("/api/sample", require("./routes/sample"));
 
 // Serve Static Assets in Production
 if (process.env.NODE_ENV) {

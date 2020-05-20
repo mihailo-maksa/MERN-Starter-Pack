@@ -1,33 +1,35 @@
-import React, { useEffect, lazy, Suspense } from "react";
+import React, { Suspense } from "react";
+
+// Redux
 import { Provider } from "react-redux";
 import store from "./store";
-import setAuthToken from "./utils/setAuthToken";
+
+// React Router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+//Components
 import Spinner from "./components/layout/Spinner";
-import ErrorBoundary from "./components/layout/ErrorBoundary";
-import { loadUser } from "./actions/auth";
+import ErrorBoundary from "./components/errors/ErrorBoundary";
+import Home from "./components/layout/Home";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import NotFound from "./components/errors/NotFound";
+
+// CSS
 import "./App.css";
 
-const Navbar = lazy(() => import("./components/layout/Navbar"));
-const Landing = lazy(() => import("./components/layout/Landing"));
-const Routes = lazy(() => import("./components/routing/Routes"));
-
 const App = () => {
-  useEffect(() => {
-    setAuthToken(localStorage.token);
-    store.dispatch(loadUser());
-  }, []);
-
   return (
     <Provider store={store}>
       <Router>
         <ErrorBoundary>
           <Suspense fallback={<Spinner />}>
-            <Navbar />
+            <Header />
             <Switch>
-              <Route exact path="/" component={Landing} />
-              <Route component={Routes} />
+              <Route exact path="/" component={Home} />
+              <Route component={NotFound} />
             </Switch>
+            <Footer />
           </Suspense>
         </ErrorBoundary>
       </Router>

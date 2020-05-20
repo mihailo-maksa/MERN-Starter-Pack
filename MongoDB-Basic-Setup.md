@@ -1,4 +1,4 @@
-# MongoDB Atlas Setup Instructions
+# MongoDB Atlas Basic Setup Instructions
 
 1.) Go to [MongoDB](https://mongodb.com) and create an account (or log into your account if you already have one)
 

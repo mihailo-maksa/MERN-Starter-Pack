@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+// Sample User Model
 
 const UserSchema = new mongoose.Schema({
   name: {

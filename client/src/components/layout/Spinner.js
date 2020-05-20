@@ -1,7 +1,8 @@
-import React, { Fragment } from "react";
+import React from "react";
+// import spinner.gif locally
 
-export default () => (
-  <Fragment>
+const Spinner = () => (
+  <div>
     <img
       src="https://raw.githubusercontent.com/bradtraversy/devconnector_2.0/master/client/src/components/layout/spinner.gif"
       alt="Loading..."
@@ -11,5 +12,7 @@ export default () => (
         display: "block"
       }}
     />
-  </Fragment>
+  </div>
 );
+
+export default Spinner;

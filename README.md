@@ -4,16 +4,11 @@
 
 INSTRUCTIONS...
 
-## Front End (React & Redux)
+## Deployment (Heroku & Namecheap)
 
-CSS framework advice (semantic UI, material UI, bootstrap, materialize css, bulma css)
-SASS setup (test it)
+Upotrebi negde onu getName akciju mzd i stavi obavezno MERN sliku na home page i stavi spinner.gif lokalno nekako
 
-## Back End (Node, Express & MongoDB)
-
-Completed (just add security notes about default.json & production.json & note that server.js is ready for deployment)
-
-## DevOps (Heroku, AWS S3 & Namecheap)
+++ mozda dodaj About.js komponentu i github repo link
 
 SSL certificate
 HTTP(S) redirection
@@ -23,5 +18,5 @@ file uploading & processing with AWS S3 (images, audio, video, pdf's, text files
 sending emails with with AWS SES
 pricing calculations for the cloud infrastructure as you scale
 
-Deplo Demo Project to Heroku!
+Deploy This Demo Project to Heroku!
 open source this project & publish it on the NPM: MERN starter pack (upload it as an NPM package mern-starter-pack)
